@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/DECORATION/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/DECORATION/1.0.0 http://maven.apache.org/xsd/decoration-1.0.0.xsd">
+  <publishDate position="right"/>
+  <version position="right"/>
+  <body>
+    <links>
+      <item name="Project Management" href="http://www.shredzone.org/projects/show/commons-captcha"/>
+    </links>
+    <breadcrumbs>
+      <item name="shredzone.org" href="http://www.shredzone.org"/>
+      <item name="commons" href="http://commons.shredzone.org"/>
+      <item name="commons-captcha" href="index.html"/>
+    </breadcrumbs>
+    <menu name="Project">
+      <item name="Introduction" href="index.html"/>
+      <item name="Project Management" href="http://www.shredzone.org/projects/show/commons-captcha"/>
+    </menu>
+    <menu ref="reports"/>
+  </body>
+</project>
+
