@@ -8,7 +8,7 @@
  * it under the terms of the GNU Library General Public License as
  * published by the Free Software Foundation, either version 3 of the
  * License, or (at your option) any later version.
- * 
+ *
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
@@ -27,22 +27,22 @@ import java.awt.image.BufferedImage;
  * @author Richard "Shred" Körber
  */
 public interface CaptchaGenerator {
-    
+
     /**
      * Gets the captcha image width. This method does not create an actual captcha image,
      * and thus can be used e.g. for writign img width attributes.
      */
     int getWidth();
-    
+
     /**
      * Gets the captcha image height. This method does not create an actual captcha image,
      * and thus can be used e.g. for writign img width attributes.
      */
     int getHeight();
-    
+
     /**
      * Creates a captcha image of the given text.
-     * 
+     *
      * @param text
      *            the text to be shown in the captcha image
      * @return {@link BufferedImage} with the generated captcha

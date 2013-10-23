@@ -8,7 +8,7 @@
  * it under the terms of the GNU Library General Public License as
  * published by the Free Software Foundation, either version 3 of the
  * License, or (at your option) any later version.
- * 
+ *
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
@@ -30,23 +30,23 @@ import javax.servlet.http.HttpSession;
  * session.
  * <p>
  * In a second step, the coordinates of the user's click within the captcha is evaluated.
- * 
+ *
  * @author Richard "Shred" Körber
  */
 public interface CaptchaService {
-    
+
     /**
      * Creates a random captcha. The correct answer is stored in the session.
-     * 
+     *
      * @param session
      *            {@link HttpSession} to store the answer in
      * @return {@link BufferedImage} generated captcha
      */
     BufferedImage createCaptcha(HttpSession session);
-    
+
     /**
      * Checks if the captcha answer is valid.
-     * 
+     *
      * @param session
      *            {@link HttpSession} that contains the correct answer
      * @param x

@@ -8,7 +8,7 @@
  * it under the terms of the GNU Library General Public License as
  * published by the Free Software Foundation, either version 3 of the
  * License, or (at your option) any later version.
- * 
+ *
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
@@ -30,7 +30,7 @@ import org.springframework.web.servlet.FrameworkServlet;
 /**
  * This servlet creates a random captcha image, stores the correct answer in the http
  * session, and streams the generated captcha image as PNG.
- * 
+ *
  * @author Richard "Shred" Körber
  */
 public class CaptchaServlet extends FrameworkServlet {
@@ -43,7 +43,7 @@ public class CaptchaServlet extends FrameworkServlet {
             response.sendError(HttpServletResponse.SC_NOT_IMPLEMENTED,
                             request.getMethod() + " is not accepted");
         }
-        
+
         // Prepare header
         response.setDateHeader("Date", System.currentTimeMillis());
         response.setHeader("Cache-Control", "no-store");
@@ -56,5 +56,5 @@ public class CaptchaServlet extends FrameworkServlet {
         BufferedImage challenge = cs.createCaptcha(request.getSession());
         ImageIO.write(challenge, "png", response.getOutputStream());
     }
-    
+
 }
