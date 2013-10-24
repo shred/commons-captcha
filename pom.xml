@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.shredzone.commons</groupId>
     <artifactId>commons-captcha</artifactId>
-    <version>0.1-SNAPSHOT</version>
+    <version>1.0</version>
     <name>Shredzone Commons: Captcha</name>
     <description>Shredzone Commons: Captcha Servlet and Service</description>
     <url>http://commons.shredzone.org</url>
@@ -18,7 +18,8 @@
         <url>scm:git:git@github.com:shred/commons-captcha.git</url>
         <connection>scm:git:git@github.com:shred/commons-captcha.git</connection>
         <developerConnection>scm:git:git@github.com:shred/commons-captcha.git</developerConnection>
-    </scm>
+      <tag>v1.0</tag>
+  </scm>
     <issueManagement>
         <system>Redmine</system>
         <url>http://www.shredzone.org/projects/commons-captcha/issues</url>
