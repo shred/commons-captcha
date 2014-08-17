@@ -89,8 +89,7 @@ public class DefaultCaptchaGenerator implements CaptchaGenerator {
             throw new IllegalStateException("Font is not set");
         }
 
-        try {
-            InputStream fontStream = DefaultCaptchaGenerator.class.getResourceAsStream(fontPath);
+        try (InputStream fontStream = DefaultCaptchaGenerator.class.getResourceAsStream(fontPath)) {
             font = Font.createFont(Font.TRUETYPE_FONT, fontStream);
         } catch (Exception ex) {
             LOG.error("Could not open font " + fontPath, ex);
