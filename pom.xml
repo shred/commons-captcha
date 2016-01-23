@@ -15,7 +15,7 @@
         </license>
     </licenses>
     <scm>
-        <url>scm:git:git@github.com:shred/commons-captcha.git</url>
+        <url>https://github.com/shred/commons-captcha/</url>
         <connection>scm:git:git@github.com:shred/commons-captcha.git</connection>
         <developerConnection>scm:git:git@github.com:shred/commons-captcha.git</developerConnection>
       <tag>HEAD</tag>
