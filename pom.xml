@@ -21,8 +21,8 @@
       <tag>HEAD</tag>
   </scm>
     <issueManagement>
-        <system>Redmine</system>
-        <url>http://www.shredzone.org/projects/commons-captcha/issues</url>
+        <system>GitHub Issues</system>
+        <url>https://github.com/shred/commons-captcha/issues</url>
     </issueManagement>
     <developers>
         <developer>
