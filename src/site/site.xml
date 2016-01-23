@@ -5,18 +5,23 @@
   <version position="right"/>
   <body>
     <links>
-      <item name="Project Management" href="http://www.shredzone.org/projects/show/commons-captcha"/>
+      <item name="API javadoc" href="./apidocs/index.html"/>
+      <item name="GitHub" href="https://github.com/shred/commons-captcha"/>
     </links>
     <breadcrumbs>
       <item name="shredzone.org" href="http://www.shredzone.org"/>
-      <item name="commons" href="http://commons.shredzone.org"/>
       <item name="commons-captcha" href="index.html"/>
     </breadcrumbs>
-    <menu name="Project">
-      <item name="Introduction" href="index.html"/>
-      <item name="Project Management" href="http://www.shredzone.org/projects/show/commons-captcha"/>
+    <menu name="Documentation">
+      <item name="API javadoc" href="./apidocs/index.html"/>
     </menu>
+    <menu ref="modules"/>
     <menu ref="reports"/>
   </body>
-</project>
 
+  <skin>
+    <groupId>org.apache.maven.skins</groupId>
+    <artifactId>maven-fluido-skin</artifactId>
+    <version>1.4</version>
+  </skin>
+</project>

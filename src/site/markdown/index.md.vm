@@ -1,0 +1,25 @@
+commons-captcha
+===============
+
+A Java servlet for generating simple captcha images.
+
+![Example Captcha](./img/captcha.png)
+
+Unlike other Captcha generators, this generator asks the user to click on a certain character, instead of typing a text.
+
+This software is part of the Shredzone Commons.
+
+The source code can be found at [GitHub](https://github.com/shred/commons-captcha) and is distributed under the terms of [GNU Lesser General Public License Version 3](http://www.gnu.org/licenses/lgpl-3.0.html).
+
+Installation
+------------
+
+_commons-captcha_ is available at Maven Central. Just add this snippet to your `pom.xml`:
+
+```xml
+<dependency>
+  <groupId>${project.groupId}</groupId>
+  <artifactId>${project.artifactId}</artifactId>
+  <version>${project.version}</version>
+</dependency>
+```
