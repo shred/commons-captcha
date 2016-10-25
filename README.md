@@ -1,4 +1,4 @@
-# commons-captcha ![build status](https://jenkins.shredzone.net/project/commons-captcha/builds/status.png?ref=master)
+# commons-captcha ![build status](https://shredzone.org/badge/commons-captcha.svg)
 
 A Java servlet for generating simple captcha images.
 
@@ -10,7 +10,7 @@ This software is part of the Shredzone Commons.
 
 ## Documentation
 
-See the [online documentation](http://www.shredzone.org/maven/commons-captcha/).
+See the [online documentation](https://shredzone.org/maven/commons-captcha/).
 
 ## Contribute
 
