@@ -31,12 +31,16 @@ public interface CaptchaGenerator {
     /**
      * Gets the captcha image width. This method does not create an actual captcha image,
      * and thus can be used e.g. for writign img width attributes.
+     *
+     * @return image width
      */
     int getWidth();
 
     /**
      * Gets the captcha image height. This method does not create an actual captcha image,
      * and thus can be used e.g. for writign img width attributes.
+     *
+     * @return image height
      */
     int getHeight();
 

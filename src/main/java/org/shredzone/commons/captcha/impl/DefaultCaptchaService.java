@@ -123,7 +123,9 @@ public class DefaultCaptchaService implements CaptchaService {
         if (oldPos != null) {
             // Make sure newPos is always != oldPos
             newPos = rnd.nextInt(NUMBER_OF_CHARS - 1);
-            if (newPos >= oldPos) newPos++;
+            if (newPos >= oldPos) {
+                newPos++;
+            }
         } else {
             newPos = rnd.nextInt(NUMBER_OF_CHARS);
         }

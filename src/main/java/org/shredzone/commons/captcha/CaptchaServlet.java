@@ -20,11 +20,15 @@
 package org.shredzone.commons.captcha;
 
 import java.awt.image.BufferedImage;
+import java.io.IOException;
 
 import javax.imageio.ImageIO;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.BeansException;
 import org.springframework.web.servlet.FrameworkServlet;
 
 /**
@@ -35,26 +39,32 @@ import org.springframework.web.servlet.FrameworkServlet;
  */
 public class CaptchaServlet extends FrameworkServlet {
     private static final long serialVersionUID = 3241024444677649962L;
+    private static final Logger LOG = LoggerFactory.getLogger(CaptchaServlet.class);
 
     @Override
     protected void doService(HttpServletRequest request, HttpServletResponse response)
     throws Exception {
-        if (!request.getMethod().equals("GET")) {
-            response.sendError(HttpServletResponse.SC_NOT_IMPLEMENTED,
-                            request.getMethod() + " is not accepted");
+        try {
+            if (!"GET".equals(request.getMethod())) {
+                response.sendError(HttpServletResponse.SC_NOT_IMPLEMENTED,
+                                request.getMethod() + " is not accepted");
+            }
+
+            // Prepare header
+            response.setDateHeader("Date", System.currentTimeMillis());
+            response.setHeader("Cache-Control", "no-store");
+            response.setHeader("Pragma", "no-cache");
+            response.setDateHeader("Expires", 0);
+            response.setContentType("image/png");
+
+            // Write captcha image
+            CaptchaService cs = getWebApplicationContext().getBean("captchaService", CaptchaService.class);
+            BufferedImage challenge = cs.createCaptcha(request.getSession());
+            ImageIO.write(challenge, "png", response.getOutputStream());
+        } catch (IOException | BeansException ex) {
+            LOG.warn("Failed to generate captcha image", ex);
+            response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, ex.getMessage()); //NOSONAR
         }
-
-        // Prepare header
-        response.setDateHeader("Date", System.currentTimeMillis());
-        response.setHeader("Cache-Control", "no-store");
-        response.setHeader("Pragma", "no-cache");
-        response.setDateHeader("Expires", 0);
-        response.setContentType("image/png");
-
-        // Write captcha image
-        CaptchaService cs = getWebApplicationContext().getBean("captchaService", CaptchaService.class);
-        BufferedImage challenge = cs.createCaptcha(request.getSession());
-        ImageIO.write(challenge, "png", response.getOutputStream());
     }
 
 }
