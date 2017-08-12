@@ -1,4 +1,4 @@
-# commons-captcha ![build status](https://shredzone.org/badge/commons-captcha.svg)
+# commons-captcha ![build status](https://shredzone.org/badge/commons-captcha.svg) ![maven central](https://maven-badges.herokuapp.com/maven-central/org.shredzone.commons/commons-captcha/badge.svg)
 
 A Java servlet for generating simple captcha images.
 
