@@ -6,7 +6,7 @@
   <body>
     <links>
       <item name="API javadoc" href="./apidocs/index.html"/>
-      <item name="GitHub" href="https://github.com/shred/commons-captcha"/>
+      <item name="Repository" href="https://codeberg.org/shred/commons-captcha"/>
     </links>
     <breadcrumbs>
       <item name="shredzone.org" href="http://www.shredzone.org"/>

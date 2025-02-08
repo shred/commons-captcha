@@ -14,8 +14,8 @@ See the [online documentation](https://shredzone.org/maven/commons-captcha/).
 
 ## Contribute
 
-* Fork the [Source code at GitHub](https://github.com/shred/commons-captcha). Feel free to send pull requests.
-* Found a bug? [File a bug report!](https://github.com/shred/commons-captcha/issues)
+* Fork the [Source code at Codeberg](https://codeberg.org/shred/commons-captcha). Feel free to send pull requests.
+* Found a bug? [File a bug report!](https://codeberg.org/shred/commons-captcha/issues)
 
 ## License
 

@@ -9,7 +9,7 @@ Unlike other Captcha generators, this generator asks the user to click on a cert
 
 This software is part of the Shredzone Commons.
 
-The source code can be found at [GitHub](https://github.com/shred/commons-captcha) and is distributed under the terms of [GNU Lesser General Public License Version 3](http://www.gnu.org/licenses/lgpl-3.0.html).
+The source code can be found at [Codeberg](https://codeberg.org/shred/commons-captcha) and is distributed under the terms of [GNU Lesser General Public License Version 3](http://www.gnu.org/licenses/lgpl-3.0.html).
 
 Installation
 ------------
